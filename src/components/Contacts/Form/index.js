@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-const default_contacts = { cname: "", csurname: "" , cemail:"", cphone:"" };
+const default_contacts = { cname: "", csurname: "", cemail: "", cphone: "" };
 
 function Form({ addContacts, contacts }) {
 
@@ -23,7 +23,7 @@ function Form({ addContacts, contacts }) {
 
         //console.log(form);
 
-        if (form.cname === "" || form.csurname === "" || form.cemail==="" || form.cphone==="") {
+        if (form.cname === "" || form.csurname === "" || form.cemail === "" || form.cphone === "") {
 
             return false;
         }
@@ -36,7 +36,7 @@ function Form({ addContacts, contacts }) {
 
         <form onSubmit={onSubmit}>
 
-            <h2>Add Contacts</h2>
+            <h2 style={{color:'white'}}>Add Contacts</h2>
 
             <div>
                 <input type="text" name="cname" placeholder='Name' value={form.cname} onChange={onChangeInput} />

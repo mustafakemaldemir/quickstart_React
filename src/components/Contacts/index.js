@@ -10,7 +10,7 @@ function Contacts() {
 
   useEffect(() => {
     console.log(contacts);
-  },[contacts]);
+  }, [contacts]);
 
   return (
 
